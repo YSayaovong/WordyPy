@@ -45,7 +45,11 @@ class Letter:
         return self.in_correct_place
 
 
-import random
+### 2. Bot Class
+The bot is your game-playing agent!
+Contains two main methods:
+make_guess(): Returns a string guess to be evaluated by the game engine.
+record_guess_results(): Takes feedback from the game engine and uses it to ensure the bot does not repeat the same guess, while also "learning" from previous guesses.
 
 class Bot:
     def __init__(self, word_list_file: str):
